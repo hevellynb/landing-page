@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Landing page</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa fa-book" aria-hidden="true" id="nav-logo"> Books</i>
+
+            <ul id="nav-list">
+                <li class="item active">
+                    <a href="#">Home</a>
+                </li>
+                <li class="item">
+                    <a href="#livros">Livros</a>
+                </li>
+                <li class="item">
+                    <a href="#avaliacoes">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Alugue aqui
+            </button>
+
+            <button id="mobile-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile-menu">
+            <ul id="mobile-nav-list">
+                <li class="item">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a href="#livros-total">Livros</a>
+                </li>
+                <li class="item">
+                    <a href="#avaliacoes-total">Avaliações</a>
+                </li>
+            </ul>
+            <button class="btn-default">
+                Alugue aqui
+            </button>
+        </div>
+
+    </header>
+
+    <main id="conteudo">
+        <section id="home">
+            <div class="formato"></div>
+            <div id="cta">
+                <h1 class="titulo">
+                    Os favoritos na palma da <span>sua mão</span>
+                </h1>
+
+                <p class="descricao">
+                    Alugue livros para ler onde você quiser e quando quiser de forma online na nossa biblioteca virtual!
+                </p>
+
+                <div id="cta-btn">
+                    <a href="" class="btn-default">
+                        Ver livros
+                    </a>
+
+                    <a href="tel:+555555555555" id="tel-btn">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone" id="telefone-icone"></i>
+                        </button>
+                        (12) 1234-5678
+                    </a>
+                </div>
+
+                <div class="redes-sociais-btn">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="src/img/livros-hero.png" alt="">
+            </div>
+        </section>
+
+        <section id="livros-total">
+            <h2 class="section-titulo">Livros</h2>
+            <h3 class="section-subtitulo">Nossos livros mais alugados</h3>
+
+            <div id="livros">
+                <div class="livro">
+                    <div class="livro-estrela">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <img src="src/img/livro-tombs.png" class="livro-imagem" alt="livro tumbas">
+
+                    <h3 class="titulo-livro">
+                        Tumbas
+                    </h3>
+
+                    <span class="livro-descricao">
+                        Autor: Junji Ito
+                    </span>
+
+                    <div class="livro-avaliacao">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="livro-preco">
+                        <h4>R$15,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="livro">
+                    <div class="livro-estrela">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <img src="src/img/livro-frankenstein.png" class="livro-imagem" alt="livro frankenstein">
+
+                    <h3 class="titulo-livro">
+                        Frankenstein
+                    </h3>
+
+                    <span class="livro-descricao">
+                        Autor: Junji Ito
+                    </span>
+
+                    <div class="livro-avaliacao">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="livro-preco">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="livro">
+                    <div class="livro-estrela">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <img src="src/img/livro-soichi.png" class="livro-imagem" alt="livro as maldições de souichi">
+
+                    <h3 class="titulo-livro">
+                        Maldições de Souichi
+                    </h3>
+
+                    <span class="livro-descricao">
+                        Autor: Junji Ito
+                    </span>
+
+                    <div class="livro-avaliacao">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="livro-preco">
+                        <h4>R$15,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="livro">
+                    <div class="livro-estrela">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <img src="src/img/livro-blackparadox.png" class="livro-imagem" alt="livro black paradox">
+
+                    <h3 class="titulo-livro">
+                        Black Paradox (Eng)
+                    </h3>
+
+                    <span class="livro-descricao">
+                        Autor: Junji Ito
+                    </span>
+
+                    <div class="livro-avaliacao">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="livro-preco">
+                        <h4>R$30,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="avaliacoes-total">
+            <h2 class="section-titulo">
+                Depoimentos
+            </h2>
+
+            <h3 class="section-subtitulo">
+                O que os usuários falam sobre nós
+            </h3>
+
+            <div id="avaliacoes">
+                <div class="avaliacao">
+                    <div class="avaliacao-pessoa">
+                        <img src="src/img/avatar-homem.webp" alt="avatar" class="avaliacao-avatar">
+                        <p>
+                            Cliente 1
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <p>
+                        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque amet, atque odit veritatis exercitationem fugiat repudiandae impedit ratione, sapiente inventore quo, nesciunt et praesentium expedita pariatur accusamus explicabo tempore alias?"
+                    </p>
+                </div>
+
+                <div class="avaliacao">
+                    <div class="avaliacao-pessoa">
+                        <img src="src/img/avatar-mulher.webp" alt="avatar" class="avaliacao-avatar">
+                        <p>
+                            Cliente 2
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <p>
+                        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque amet, atque odit veritatis exercitationem fugiat repudiandae impedit ratione, sapiente inventore quo, nesciunt et praesentium expedita pariatur accusamus explicabo tempore alias?"
+                    </p>
+                </div>
+
+                <div class="avaliacao">
+                    <div class="avaliacao-pessoa">
+                        <img src="src/img/avatar-mulher2.webp" alt="avatar" class="avaliacao-avatar">
+                        <p>
+                            Cliente 3
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <p>
+                        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque amet, atque odit veritatis exercitationem fugiat repudiandae impedit ratione, sapiente inventore quo, nesciunt et praesentium expedita pariatur accusamus explicabo tempore alias?"
+                    </p>
+                </div>
+            </div>
+
+            <button class="btn-default">
+                Ver mais avaliações
+            </button>
+
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/img/onda.svg" alt="">
+
+        <div id="footer-itens">
+            <span id="copyright">
+                &copy 2024 Hevellyn Barros
+            </span>
+
+            <div class="redes-sociais-btn">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="src/javascript/script.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+</html>
